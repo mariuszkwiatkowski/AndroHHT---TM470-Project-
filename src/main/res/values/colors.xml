@@ -1,0 +1,11 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="green_button">#ff8ccd3a</color>
+    <color name="red_button">#ffcd4b31</color>
+    <color name="light_green_button">#ffb8ff3d</color>
+    <color name="light_red_button">#ffff5531</color>
+    <color name="light_purple">#ffd2a5ff</color>
+    <color name="blue_button">#ff65cfff</color>
+    <color name="off_white_text">#fff2f3ff</color>
+</resources>

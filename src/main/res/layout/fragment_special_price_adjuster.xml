@@ -1,0 +1,249 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kwiatkowski.androhht.androhht.SpecialPrice_Adjuster">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Price mode: "
+            android:id="@+id/switch_price_mode"
+            android:layout_above="@+id/btn_minus_one_percent"
+            android:layout_marginBottom="15dp"
+            android:checked="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:switchMinWidth="100dp"
+            android:textOff="Normal"
+            android:textOn="Special"
+            android:textStyle="bold"
+            android:thumbTextPadding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/barcode_product_id"
+            android:id="@+id/txt_Barcode_Product_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txt_barcode_product_id"
+            android:layout_alignTop="@+id/txt_Barcode_Product_id"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:hint="Barcode"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txt_product_description"
+            android:layout_below="@+id/txt_Barcode_Product_id"
+            android:layout_alignLeft="@+id/txt_Barcode_Product_id"
+            android:layout_alignStart="@+id/txt_Barcode_Product_id"
+            android:layout_marginTop="10dp"
+            android:hint="product name"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="+1%"
+            android:id="@+id/btn_plus_one_percent"
+            android:layout_marginTop="70dp"
+            android:background="@color/light_green_button"
+            android:minWidth="80dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@+id/txt_product_description"
+            android:layout_alignLeft="@+id/txt_product_description"
+            android:layout_alignStart="@+id/txt_product_description" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="-1%"
+            android:id="@+id/btn_minus_one_percent"
+            android:layout_alignTop="@+id/btn_plus_one_percent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:minWidth="80dp"
+            android:background="@color/light_red_button"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edit_special_price"
+            android:text="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:numeric="decimal"
+            android:layout_alignTop="@+id/btn_plus_one_percent"
+            android:layout_toRightOf="@+id/btn_plus_one_percent"
+            android:layout_toLeftOf="@+id/btn_minus_one_percent"
+            android:clickable="true" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:text="+5%"
+            android:id="@+id/btn_plus_five_percent"
+            android:background="@color/light_green_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@+id/edit_special_price"
+            android:layout_toLeftOf="@+id/btn_accept_adj_price"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:text="-5%"
+            android:id="@+id/btn_minus_five_percent"
+            android:background="@color/light_red_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignTop="@+id/btn_plus_five_percent"
+            android:layout_alignRight="@+id/txt_barcode_product_id"
+            android:layout_alignEnd="@+id/txt_barcode_product_id" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_round_to_99"
+            android:background="@color/light_purple"
+            android:clickable="true"
+            android:focusable="true"
+            android:singleLine="false"
+            android:text="Round to .99"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/btn_minus_five_percent"
+            android:layout_alignLeft="@+id/btn_minus_five_percent"
+            android:layout_alignStart="@+id/btn_minus_five_percent"
+            android:layout_alignRight="@+id/btn_minus_five_percent"
+            android:layout_alignEnd="@+id/btn_minus_five_percent" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:text="Round to .00"
+            android:id="@+id/btn_round_to_00"
+            android:background="@color/light_purple"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignTop="@+id/btn_round_to_99"
+            android:layout_alignRight="@+id/btn_plus_five_percent"
+            android:layout_alignEnd="@+id/btn_plus_five_percent"
+            android:layout_alignLeft="@+id/btn_plus_five_percent"
+            android:layout_alignStart="@+id/btn_plus_five_percent" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Starting on:"
+            android:id="@+id/txt_offer_starting_on"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/btn_round_to_00"
+            android:layout_alignLeft="@+id/btn_plus_five_percent"
+            android:layout_alignStart="@+id/btn_plus_five_percent"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/edit_offer_from"
+            android:hint="yyyy"
+            android:layout_gravity="left"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/txt_offer_starting_on"
+            android:layout_alignLeft="@+id/btn_discard_adj_price"
+            android:layout_alignStart="@+id/btn_discard_adj_price"
+            android:text="01/01/2010" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Ending on:"
+            android:id="@+id/txt_offer_finishing_on"
+            android:layout_alignTop="@+id/txt_offer_starting_on"
+            android:layout_alignRight="@+id/btn_minus_five_percent"
+            android:layout_alignEnd="@+id/btn_minus_five_percent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/edit_offer_to"
+            android:hint="yyyy"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/txt_offer_finishing_on"
+            android:layout_alignRight="@+id/btn_accept_adj_price"
+            android:layout_alignEnd="@+id/btn_accept_adj_price"
+            android:text="30/12/2014" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discard"
+            android:id="@+id/btn_discard_adj_price"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_alignRight="@+id/txt_Barcode_Product_id"
+            android:layout_alignEnd="@+id/txt_Barcode_Product_id"
+            android:minHeight="40dp"
+            android:background="@color/blue_button"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignLeft="@+id/btn_plus_one_percent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/btn_accept_adj_price"
+            android:layout_alignRight="@+id/btn_minus_one_percent"
+            android:layout_alignEnd="@+id/btn_minus_one_percent"
+            android:layout_alignTop="@+id/btn_discard_adj_price"
+            android:minHeight="40dp"
+            android:background="@color/green_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:enabled="false"
+            android:layout_toRightOf="@+id/btn_discard_adj_price"
+            android:layout_marginLeft="20dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

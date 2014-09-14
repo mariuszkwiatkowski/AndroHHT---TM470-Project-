@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kwiatkowski.androhht.androhht.Image_Add">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/barcode_product_id"
+            android:id="@+id/txt_Barcode_Product_id"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/txt_barcode_product_id"
+            android:layout_alignTop="@+id/txt_Barcode_Product_id"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:hint="Barcode"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txt_product_description"
+            android:layout_below="@+id/txt_Barcode_Product_id"
+            android:layout_alignLeft="@+id/txt_Barcode_Product_id"
+            android:layout_alignStart="@+id/txt_Barcode_Product_id"
+            android:layout_marginTop="10dp"
+            android:hint="product name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Click below to add a picture..."
+            android:id="@+id/txt_Click_To_Add_Picture"
+            android:layout_above="@+id/imageView_add_picture"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_add_picture"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter"
+            android:background="@color/off_white_text"
+            android:minHeight="200dp"
+            android:longClickable="false"
+            android:maxHeight="200dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discard"
+            android:id="@+id/btn_add_picture_discard"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_alignRight="@+id/txt_Barcode_Product_id"
+            android:layout_alignEnd="@+id/txt_Barcode_Product_id"
+            android:minHeight="40dp"
+            android:background="@color/blue_button"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_alignLeft="@+id/txt_product_description" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/btn_add_picture_accept"
+            android:layout_alignTop="@+id/btn_add_picture_discard"
+            android:minHeight="40dp"
+            android:background="@color/green_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:enabled="true"
+            android:layout_toRightOf="@+id/btn_add_picture_discard"
+            android:layout_marginLeft="20dp"
+            android:layout_alignRight="@+id/txt_barcode_product_id"
+            android:layout_alignEnd="@+id/txt_barcode_product_id" />
+    </RelativeLayout>
+</FrameLayout>
