@@ -35,6 +35,11 @@ import java.util.Calendar;
 ;import static com.kwiatkowski.androhht.androhht.util.DateConverter.DateWithoutTime;
 import static com.kwiatkowski.androhht.androhht.util.DateConverter.toDateWithTime;
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
 
 
 public class SpecialPrice_Adjuster extends Fragment implements Button.OnClickListener, DatePickerFragment.DatePickerFragmentListener {

@@ -42,6 +42,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 public class MainMenu extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks, retrieveQuantity.retrieveQuantity_interface, Retrieve_SKU.RetrieveSKUListener, Qty_adjuster.QtyAdjusterListener, setQuantity.setQuantity_interface, setSpecialPrice.setSpecialPrice_interface, retrieveItemID.retrieveItemID_interface, MultipleItemsFoundDialog.MultipleItemsFoundDialogListener, retrievePrice.retrievePrice_interface, SpecialPrice_Adjuster.PriceAdjusterListener, Product_creator.ProductCreatorListener, retrieveFullProduct.retrieveFullProduct_interface, setFullProduct.setFullProduct_interface, Image_Add.Image_AddListener, setImage.setImage_interface, Category_Add.Category_AddListener, setCategory.setCategory_interface {
 

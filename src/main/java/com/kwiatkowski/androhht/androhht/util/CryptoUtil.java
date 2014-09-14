@@ -21,6 +21,12 @@ import android.util.Base64;
  * Elenkov, N. (2012a) Using Password-based Encryption on Android [Online]. Available at http://nelenkov.blogspot.co.uk/2012/04/using-password-based-encryption-on.html (Accessed 10 June 2014)
  * Elenkov, N. (2012b) Android password-based encryption (PBE) implementation [Source code]. Available at https://github.com/nelenkov/android-pbe (Accessed 10 June 2014)
  *
+ *
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ *
+ *
+ *
  */
 public class CryptoUtil {
 

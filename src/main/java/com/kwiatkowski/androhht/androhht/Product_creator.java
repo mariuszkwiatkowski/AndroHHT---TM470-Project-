@@ -22,7 +22,10 @@ import org.xmlpull.v1.XmlSerializer;
 
 import java.io.StringWriter;
 
-
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
 
 public class Product_creator extends Fragment implements Button.OnClickListener {
     public int product_action_type = 0; //0 - create, 1 - amend

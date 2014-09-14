@@ -28,16 +28,11 @@ import java.io.StringWriter;
 
 
 /**
- * A simple {@link android.support.v4.app.Fragment} subclass.
- * Activities that contain this fragment must implement the
-
- * Use the {@link Qty_adjuster#newInstance} factory method to
- * create an instance of this fragment.
- *
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
  */
 public class Qty_adjuster extends Fragment implements Button.OnClickListener {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
     private static final String ITEM_UNIQUE_ID = "unique_id";
     private static final String ITEM_BARCODE = "ean13";
     private static final String ITEM_DESCRIPTION = "description";
@@ -45,7 +40,7 @@ public class Qty_adjuster extends Fragment implements Button.OnClickListener {
     public String payload;
     EditText edit_qty_adjuster_x;
 
-    // TODO: Rename and change types of parameters
+
     private int unique_id;
     private String ean13;
     private String description;
@@ -54,14 +49,7 @@ public class Qty_adjuster extends Fragment implements Button.OnClickListener {
 
     private QtyAdjusterListener mListener;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
 
-     * @return A new instance of fragment Qty_adjuster.
-     */
-    // TODO: Rename and change types and number of parameters
     public static Qty_adjuster newInstance(int ITEM_UNIQUE_ID_PARAM, String ITEM_BARCODE_PARAM, String ITEM_DESCRIPTION_PARAM, String ITEM_QUANTITY_PARAM) {
 
 
@@ -177,7 +165,7 @@ public class Qty_adjuster extends Fragment implements Button.OnClickListener {
 
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
+
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.StockAdjustmentRequested(unique_id,payload);
@@ -203,18 +191,9 @@ public class Qty_adjuster extends Fragment implements Button.OnClickListener {
 
 
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+
     public interface QtyAdjusterListener {
-        // TODO: Update argument type and name
+
         public void StockAdjustmentRequested(int unique_id, String payload);
     }
 

@@ -14,6 +14,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
+
 public class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
     public int requester;
     private Fragment mFragment;

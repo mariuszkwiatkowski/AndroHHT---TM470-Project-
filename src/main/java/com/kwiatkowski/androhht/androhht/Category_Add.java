@@ -29,6 +29,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
+
+
 
 public class Category_Add extends Fragment implements Button.OnClickListener {
 

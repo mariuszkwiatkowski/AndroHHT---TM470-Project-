@@ -1,5 +1,11 @@
 package com.kwiatkowski.androhht.androhht;
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 
 public class Profile {
     private int id;

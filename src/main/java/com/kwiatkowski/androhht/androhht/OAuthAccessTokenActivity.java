@@ -49,6 +49,12 @@ import java.lang.reflect.Field;
  * De Waele, D. (2011) Improved Twitter OAuth for Android [Online]. Available at http://blog.doityourselfandroid.com/2011/08/08/improved-twitter-oauth-android/ (Accessed 12 June 2014)
  * De Waele, D. (2011) AndroidTwitterGoogleApiJavaClient [Source code]. Available at https://github.com/ddewaele/AndroidTwitterGoogleApiJavaClient (Accessed 10 June 2014)
  *
+ *
+ *
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ *
+ *
  */
 @SuppressLint("SetJavaScriptEnabled")
 public class OAuthAccessTokenActivity extends Activity {

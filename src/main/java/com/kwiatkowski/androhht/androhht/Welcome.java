@@ -35,6 +35,12 @@ import java.util.List;
  *
  * Template generated automatically by Android Studio
  *
+ * **
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ *
+ *
+ *
  */
 
 public class Welcome extends Activity implements PasswordDialog.PasswordDialogListener {

@@ -1,6 +1,12 @@
 package com.kwiatkowski.androhht.androhht;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 public class basicProductInfo {
     private int entity_id;
     private String sku;

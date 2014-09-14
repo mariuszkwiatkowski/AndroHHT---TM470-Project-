@@ -13,6 +13,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 
 public class DatabaseManager {
 

@@ -5,6 +5,14 @@ package com.kwiatkowski.androhht.androhht;
  * Original code by Dushyanth Maguluru (2014)
  *
  * Maguluru, D. (2014) Barcode Scanner Libraries for Android (2014). Available at https://github.com/dm77/barcodescanner (Accessed 13 April 2014)
+ *
+ *
+ *
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ *
+ *
+ *
  */
 
 import android.app.Activity;

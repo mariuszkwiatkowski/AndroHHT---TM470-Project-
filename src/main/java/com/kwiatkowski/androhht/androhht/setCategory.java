@@ -19,6 +19,12 @@ import org.xmlpull.v1.XmlSerializer;
 import java.io.StringWriter;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 public class setCategory extends AsyncTask<String, Void, Void> {
     public Context mContext;
     public ProgressDialog Dialog;

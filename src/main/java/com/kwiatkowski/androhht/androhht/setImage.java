@@ -14,6 +14,13 @@ import org.scribe.model.Token;
 import org.scribe.model.Verb;
 import org.scribe.oauth.OAuthService;
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
+
 
 public class setImage extends AsyncTask<String, Void, Void> {
     public Context mContext;

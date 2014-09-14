@@ -20,7 +20,10 @@ import android.widget.Toast;
 import com.google.zxing.Result;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
 
 public class Retrieve_SKU extends Fragment implements Button.OnClickListener {
 
@@ -135,7 +138,7 @@ public class Retrieve_SKU extends Fragment implements Button.OnClickListener {
 
 
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
+
         public void onFragmentInteraction(Uri uri);
     }
 

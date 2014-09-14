@@ -6,6 +6,12 @@ import android.view.View;
 
 /**
  * Generated automatically by Android Studio
+ *
+ *
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ *
+ *
  */
 public abstract class SystemUiHider {
 

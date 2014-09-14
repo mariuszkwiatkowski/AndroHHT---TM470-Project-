@@ -27,7 +27,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
 
 public class retrieveQuantity extends AsyncTask<String, Void, Void> {
     public Context mContext;

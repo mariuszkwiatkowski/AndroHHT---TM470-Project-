@@ -21,6 +21,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 public class MultipleItemsFoundDialog extends DialogFragment  {
     public List<basicProductInfo> products = new ArrayList<basicProductInfo>();
 

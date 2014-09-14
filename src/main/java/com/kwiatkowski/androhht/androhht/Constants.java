@@ -1,6 +1,12 @@
 package com.kwiatkowski.androhht.androhht;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 public class Constants {
     public static final String TAG = "oauth";
 

@@ -20,6 +20,12 @@ import java.sql.SQLException;
 import java.text.ParseException;
 
 
+/**
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ */
+
+
 public class PasswordDialog extends DialogFragment {
 
     DatabaseManager dbManager;

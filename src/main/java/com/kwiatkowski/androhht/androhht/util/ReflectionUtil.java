@@ -5,6 +5,10 @@ import java.lang.reflect.Modifier;
 
 /**
  * Based on http://stackoverflow.com/questions/735230/java-reflection-access-protected-field
+ *
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ *
  */
 public class ReflectionUtil {
 

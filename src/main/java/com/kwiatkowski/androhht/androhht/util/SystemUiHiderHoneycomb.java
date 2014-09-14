@@ -8,6 +8,13 @@ import android.view.WindowManager;
 
 /**
  * Generated automatically by Android Studio
+ *
+ *
+ * This application uses 3rd party libraries and code.
+ * Refer to LICENCE.txt for licensing details
+ *
+ *
+ *
  */
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class SystemUiHiderHoneycomb extends SystemUiHiderBase {
